@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MotoSpares - Premium Bike Parts & Accessories</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Link External CSS -->
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .product-img-wrap {
+            width: 100%;
+            height: 220px;
+            background-color: #1a1a1a;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            padding: 10px;
+        }
+        .product-img-wrap img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+        .card:hover .product-img-wrap img {
+            transform: scale(1.08);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- NAVIGATION BAR -->
+    <nav>
+        <div class="logo" onclick="navigateTo('home')">⚙️ MOTO<span>SPARES</span></div>
+        <ul class="nav-links">
+            <li><a id="nav-home" class="active" onclick="navigateTo('home')">Home</a></li>
+            <li><a onclick="navigateTo('404')">About Us</a></li>
+            <li><a onclick="navigateTo('404')">Services</a></li>
+            <li><a onclick="navigateTo('404')">Contact Us</a></li>
+            <li><a onclick="navigateTo('404')">Login</a></li>
+            <li><a class="btn-register" onclick="navigateTo('404')">Register</a></li>
+        </ul>
+    </nav>
+
+    <!-- VIEW 1: HOME / LANDING PAGE -->
+    <div id="home-view" class="view-section active">
+        <!-- Hero Section -->
+        <header class="hero">
+            <span class="hero-subtitle">High-Performance Engineering</span>
+            <h1 class="hero-title">Unleash Your Bike’s True Potential</h1>
+            <p class="hero-text">Explore professional-grade spare parts, high-flow exhausts, and custom accessories.</p>
+            <button class="btn-primary-outline" onclick="navigateTo('404')">Explore Catalog →</button>
+        </header>
+
+        <!-- Featured Section -->
+        <section class="container">
+            <div class="grid-two">
+                <div class="feature-box">
+                    <span style="font-size: 12px; letter-spacing: 2px; color: var(--accent-red); font-weight: 700;">CERTIFIED QUALITY</span>
+                    <h2>Built for Speed & Ultimate Durability</h2>
+                    <p>Upgrade your machine with precision-engineered components designed for maximum performance on track and highway alike.</p>
+                    <div style="display: flex; gap: 30px; margin-bottom: 30px;">
+                        <div>
+                            <h4 style="margin-bottom: 5px;">⚡ Express Shipping</h4>
+                            <p style="font-size: 14px; margin: 0; color: var(--text-muted);">Get parts delivered fast</p>
+                        </div>
+                        <div>
+                            <h4 style="margin-bottom: 5px;">🛠️ OEM Standard</h4>
+                            <p style="font-size: 14px; margin: 0; color: var(--text-muted);">100% genuine guaranteed</p>
+                        </div>
+                    </div>
+                    <button class="btn-register" onclick="navigateTo('404')" style="border: none; cursor: pointer;">Shop Spares →</button>
+                </div>
+                <div>
+                    <img src="https://images.unsplash.com/photo-1485965120184-e220f721d03e?auto=format&fit=crop&q=80&w=800" alt="Motorcycle Engine" class="img-fluid">
+                </div>
+            </div>
+        </section>
+
+        <!-- Best Sellers / Popular Parts Section -->
+        <section class="container" style="padding-top: 0;">
+            <div class="section-header">
+                <div>
+                    <span style="font-size: 12px; letter-spacing: 2px; color: var(--accent-red); font-weight: 700;">TOP CATEGORIES</span>
+                    <h2>Popular Performance Parts</h2>
+                </div>
+                <a onclick="navigateTo('404')">View All Parts →</a>
+            </div>
+
+            <div class="grid-four">
+                <!-- Part 1: Racing Exhaust Systems -->
+                <div class="card" onclick="navigateTo('404')">
+                    <div class="product-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?auto=format&fit=crop&q=80&w=600" alt="Racing Exhaust Systems">
+                    </div>
+                    <div class="card-body">
+                        <h4>Racing Exhaust Systems</h4>
+                        <p>$249.00</p>
+                    </div>
+                </div>
+
+                <!-- Part 2: High-Bite Brake Rotors (Fixed with actual brake disc photo) -->
+                <div class="card" onclick="navigateTo('404')">
+                    <div class="product-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1558981403-c5f9899a28bc?auto=format&fit=crop&q=80&w=600" alt="High-Bite Brake Rotors">
+                    </div>
+                    <div class="card-body">
+                        <h4>High-Bite Brake Rotors</h4>
+                        <p>$89.00</p>
+                    </div>
+                </div>
+
+                <!-- Part 3: Heavy Duty Drive Chain (Fixed with actual gears/chains) -->
+                <div class="card" onclick="navigateTo('404')">
+                    <div class="product-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1558981359-219d6364c9c8?auto=format&fit=crop&q=80&w=600" alt="Heavy Duty Drive Chain">
+                    </div>
+                    <div class="card-body">
+                        <h4>Heavy Duty Drive Chain</h4>
+                        <p>$65.00</p>
+                    </div>
+                </div>
+
+                <!-- Part 4: Adjustable Monoshock (Fixed with hardware/suspension) -->
+                <div class="card" onclick="navigateTo('404')">
+                    <div class="product-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1558980664-3a031cf67ea8?auto=format&fit=crop&q=80&w=600" alt="Adjustable Monoshock">
+                    </div>
+                    <div class="card-body">
+                        <h4>Adjustable Monoshock</h4>
+                        <p>$320.00</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- VIEW 2: CUSTOM 404 ERROR PAGE -->
+    <div id="404-view" class="view-section">
+        <div class="error-container">
+            <div class="error-number">404</div>
+            <h2 class="error-title">Page Not Found</h2>
+            <p class="error-desc">
+                The gear or page you are looking for might have been shifted down, moved to a different track, or is currently unavailable.
+            </p>
+            <button class="btn-register" onclick="navigateTo('home')" style="border: none; cursor: pointer; padding: 12px 30px; font-size: 16px;">
+                Back to Home
+            </button>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-grid">
+            <div>
+                <h3>⚙️ MOTO<span style="color: var(--accent-red);">SPARES</span></h3>
+                <p style="font-size: 14px; line-height: 1.6;">Your ultimate destination for motorcycle components and custom spares.</p>
+            </div>
+            <div>
+                <h4>Explore</h4>
+                <ul>
+                    <li><a onclick="navigateTo('home')">Home</a></li>
+                    <li><a onclick="navigateTo('404')">About Us</a></li>
+                    <li><a onclick="navigateTo('404')">Catalog</a></li>
+                    <li><a onclick="navigateTo('404')">Contact Us</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Support</h4>
+                <ul>
+                    <li><a onclick="navigateTo('404')">Order Tracking</a></li>
+                    <li><a onclick="navigateTo('404')">Returns & Warranty</a></li>
+                    <li><a onclick="navigateTo('404')">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Get In Touch</h4>
+                <p style="font-size: 14px; margin-bottom: 5px;">support@motospares.com</p>
+                <p style="font-size: 14px;">+1 (800) 555-MOTO</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            © 2026 MotoSpares Inc. All rights reserved.
+        </div>
+    </footer>
+
+    <!-- Link External JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
